@@ -150,7 +150,7 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Code & Data (Website Being Established)</span>
+                  <span>Code & Data (Website under Construction)</span>
                   </a>
             </div>
           </div>
@@ -243,31 +243,36 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Cloth-Changing Person Re-Identification (CC-ReID) is a common 
+            and realistic problem since fashion constantly changes over time 
+            and people's aesthetic preferences are not set in stone. While most 
+            existing cloth-changing ReID methods focus on learning cloth-agnostic 
+            identity representations from coarse semantic cues (e.g. 
+            silhouettes and part segmentation maps), they neglect the continuous 
+            shape distributions at the pixel level.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this paper, we 
+            propose Continuous Surface Correspondence Learning (CSCL), a 
+            new shape embedding paradigm for cloth-changing ReID. CSCL 
+            establishes continuous correspondences between a 2D image plane 
+            and a canonical 3D body surface via pixel-to-vertex classification, 
+            which naturally aligns a person image to the surface of a 3D human 
+            model and simultaneously obtains pixel-wise surface embeddings. 
+            We further extract fine-grained shape features from the learned 
+            surface embeddings and then integrate them with global RGB features 
+            via a carefully designed cross-modality fusion module. The 
+            shape embedding paradigm based on 2D-3D correspondences remarkably 
+            enhances the model's global understanding of human body shape.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            To promote the study of ReID under clothing change, 
+            we construct 3D Dense Persons (DP3D), which is the first largescale 
+            cloth-changing ReID dataset that provides densely annotated 
+            2D-3D correspondences and a precise 3D mesh for each person 
+            image, while containing diverse cloth-changing cases over all four 
+            seasons. Experiments on both cloth-changing and cloth-consistent 
+            ReID benchmarks validate the effectiveness of our method.
           </p>
         </div>
       </div>
