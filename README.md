@@ -1,14 +1,14 @@
-# Nerfies
+# CSCL
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [CSCL website](https://CSCL-CC.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find CSCL useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@InProceedings{Yubin2023CSCL,
+  author    = {Yubin, Wang and Huimin, Yu and Yuming, Yan and Shuyi, Song and Biyang, Liu and Yichong, Lu},
+  title     = {Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences},
+  booktitle = {Proceedings of the 31th ACM International Conference on Multimedia},
+  year      = {2023}
 }
 ```
 
