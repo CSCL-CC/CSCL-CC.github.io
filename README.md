@@ -4,7 +4,7 @@ This is the repository that contains source code for the [CSCL website](https://
 
 If you find CSCL useful for your work please cite:
 ```
-@InProceedings{Yubin2023CSCL,
+@InProceedings{wang2023cscl,
   author    = {Yubin, Wang and Huimin, Yu and Yuming, Yan and Shuyi, Song and Biyang, Liu and Yichong, Lu},
   title     = {Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences},
   booktitle = {Proceedings of the 31th ACM International Conference on Multimedia},
