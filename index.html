@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences.">
+  <meta name="keywords" content="CSCL, 2D-3D Correspondences, Cloth-Changing Person Re-Identification, Shape Embedding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences</h1>
+          <h2 class="title is-3">
+            ACM MM 2023
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Yubin Wang,</span>
+            <span class="author-block">
+              Huimin Yu,</span>
+            <span class="author-block">
+              Yuming Yan,
+            </span>
+            <span class="author-block">
+              Shuyi Song,
+            </span>
+            <span class="author-block">
+              Biyang Liu,
+            </span>
+            <span class="author-block">
+              Yichong Lu
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Zhejiang University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://dl.acm.org/doi/10.1145/3581783.3611715"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.18438"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3581783.3611715&file=mmfp0106-video.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+	      <span class="link-block">
+                <a href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3581783.3611715&file=mmfp0106-video.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="subtitle has-text-centered">
+        Comparison of different multi-modal auxiliary information for CC-ReID.
+      </h2>
+      <div class="content">
+        <img src="./static/images/pic_intro.png"
+               class="interpolation-image"
+               alt="Introduction Image." height="50%" width="50%"/>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Cloth-Changing Person Re-Identification (CC-ReID) is a common 
+            and realistic problem since fashion constantly changes over time 
+            and people's aesthetic preferences are not set in stone. While most 
+            existing cloth-changing ReID methods focus on learning cloth-agnostic 
+            identity representations from coarse semantic cues (e.g. 
+            silhouettes and part segmentation maps), they neglect the continuous 
+            shape distributions at the pixel level.
+          </p>
+          <p>
+            In this paper, we 
+            propose Continuous Surface Correspondence Learning (CSCL), a 
+            new shape embedding paradigm for cloth-changing ReID. CSCL 
+            establishes continuous correspondences between a 2D image plane 
+            and a canonical 3D body surface via pixel-to-vertex classification, 
+            which naturally aligns a person image to the surface of a 3D human 
+            model and simultaneously obtains pixel-wise surface embeddings. 
+            We further extract fine-grained shape features from the learned 
+            surface embeddings and then integrate them with global RGB features 
+            via a carefully designed cross-modality fusion module. The 
+            shape embedding paradigm based on 2D-3D correspondences remarkably 
+            enhances the model's global understanding of human body shape.
+          </p>
+          <p>
+            To promote the study of ReID under clothing change, 
+            we construct 3D Dense Persons (DP3D), which is the first large-scale 
+            cloth-changing ReID dataset that provides densely annotated 
+            2D-3D correspondences and a precise 3D mesh for each person 
+            image, while containing diverse cloth-changing cases over all four 
+            seasons. Experiments on both cloth-changing and cloth-consistent 
+            ReID benchmarks validate the effectiveness of our method.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Model Architecture</h2>
+        <div class="publication-video">
+          <img src="./static/images/pic_arch.png"
+                 class="interpolation-image"
+                 alt="Model Arch Image." height="120%" width="120%"/>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">3D Dense Persons (DP3D)</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Data Collection</h3>
+        <div class="content has-text-justified">
+          <p>
+            DP3D comprises 39,100 person images belonging to 413 different
+            persons, which were captured over the course of a year (during four
+            distinct seasons). A total of 15 cameras were selected, with 5
+            of them having a resolution of 4K, 2 having a resolution of 2K,
+            and the remainder being set to a resolution of 1080P.
+          </p>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <div class="publication-video">
+              <img src="./static/images/pic_cscl.png"
+                     class="interpolation-image"
+                     alt="DP3D Person Images." height="120%" width="120%"/>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Annotation Pipeline</h3>
+        <div class="content has-text-justified">
+          <p>
+            We annotated dense 2D-3D correspondences for each person image via a carefully designed annotation 
+            system, ensuring 80 to 125 annotations for each image. The sampling method avoids seams between body parts
+             and ensures a sufficient number of sampling points for smaller parts.
+          </p>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <div class="publication-video">
+              <img src="./static/images/pic_anno.png"
+                     class="interpolation-image"
+                     alt="DP3D Annotation Process." height="120%" width="120%"/>
+            </div>
+          </div>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+    <!-- Concurrent Work. -->
+    
+    <!--/ Concurrent Work. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{wang2023cscl,
+  author    = {Yubin, Wang and Huimin, Yu and Yuming, Yan and Shuyi, Song and Biyang, Liu and Yichong, Lu},
+  title     = {Exploring Shape Embedding for Cloth-Changing Person Re-Identification via 2D-3D Correspondences},
+  booktitle = {Proceedings of the 31th ACM International Conference on Multimedia},
+  year      = {2023}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The website is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
